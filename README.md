@@ -14,11 +14,11 @@ This first step in almost any situation is to create a Virtual Private Cloud (VP
 
 For the University specifically, it is only necessary to create 2 public subnets, which are similar to LANs, in different availablility zones for backup incase of failure on the AWS side and auto scaling later. This helps to make the website which will be hosted on and EC2 instance on the subnet more available and accessable to users. For the sake of this scenario NAT gateways are not necessary as there are no private subnets required as the RDS has been simplified within the application itself. With this groundwork in place the University is setup to have much improvement to their resoureces at a cheap price.
 ### Step 2 - Create an EC2 Instance
-In order for XYZ University's application to be accessable to the public for users to interact with an EC2 instance needs to be created to act as a Web Server and host the application on the public subnet. In order to craete and EC2 Instance follow the steps bellow.
+In order for XYZ University's application to be accessable to the public for users to interact with an EC2 instance needs to be created to act as a Web Server and host the application on the public subnet. In order to craete an EC2 Instance I followed these steps bellow.
 + Navigate to EC2 in the services menu within the AWS console
 + Click on instances
 + Select launch instance
 + Provision to case specific requirements
 + Launch the Instance
 
-With regards to the Univeristy's case the instance requirments are more taxing than a personal use case as there are thousands of users relying on the availabiliy of the application.
+With regards to the Univeristy's case the instance requirments are more taxing than a personal use case as there are thousands of users relying on the availabiliy of the application. 
