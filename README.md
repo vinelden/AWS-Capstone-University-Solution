@@ -11,6 +11,8 @@ architecture for this hypothetical university to implement to boost their availa
 
 ![AWS Capstone Project Topology (1)](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/fa795571-0b84-44d5-87c1-95d2ff42aca2)
 
+My solution creates a VPC for the University with two public subnets. Within these subnets, there are EC2 instances that host the web application. My solution utilizes an Application Load Balancer that routes the traffic to an Auto Scaling Group that will help to handle peak traffic at thousands of connections and requests. My solution also stays within an $80 budget for a month's worth of uptime and maintenance. This is the main reason that Amazon Web Services is a great tool for this university as it provides a cheap alternative to on-premises networking services that are harder to provision and come at a much higher price.
+
 ## Implementation
 There are many aspects at play when it comes to AWS architecture which is why I will go through my process step by step in order to make it easier to digest.
 
@@ -112,3 +114,6 @@ Additionally the average CPU utilization per instance was reduced to a comfortab
 ![Screenshot 2023-05-31 141322](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/7466da7e-7015-4070-97f2-7fa98fbdd75a)
 
 ![Screenshot 2023-05-31 141842](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/122cca4d-2584-4db7-85fd-81a98035db5b)
+
+## Conclusion
+With the aid of Amazon Web Services, XYZ University was able to find a solution to a problem that was deterring potential students and opportunities. All coming at a cheap price, this solution was able to be implemented and tested under large stress as proof that the architecture was compatible and highly available to the users.
