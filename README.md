@@ -6,12 +6,23 @@ With admission season around the corner, XYZ University’s website lacks the pr
 ![XYZ](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/6b0c4de6-950f-461d-85ae-671801ab41ac)
 
 ## Solution
+### Architecture
 In order to solve this problem they have decided to migrate to the AWS Cloud with a goal to mitigate user frustration and distribute a highly accessible and agile application to all users. Using my background in AWS I have created a solution within the AWS console and created an 
 architecture for this hypothetical university to implement to boost their availability for their users.
 
 ![AWS Capstone Project Topology (1)](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/fa795571-0b84-44d5-87c1-95d2ff42aca2)
 
 My solution creates a VPC for the University with two public subnets. Within these subnets, there are EC2 instances that host the web application. My solution utilizes an Application Load Balancer that routes the traffic to an Auto Scaling Group that will help to handle peak traffic at thousands of connections and requests. My solution also stays within an $80 budget for a month's worth of uptime and maintenance. This is the main reason that Amazon Web Services is a great tool for this university as it provides a cheap alternative to on-premises networking services that are harder to provision and come at a much higher price.
+
+### Cost Analysis
+
+![pt11](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/5e32f200-a9b1-4d29-a595-710b59e50e19)
+
+![pt2](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/babb1d80-837a-4fab-9653-356d482456fd)
+
+$38.71 can be reducted from the total monthly cost as RDS was simplified from this project and is incorporated within the application itself.
+
+![pt3](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/0ca80703-9a52-45e4-9eda-f6198080e7e8)
 
 ## Implementation
 There are many aspects at play when it comes to AWS architecture which is why I will go through my process step by step in order to make it easier to digest.
