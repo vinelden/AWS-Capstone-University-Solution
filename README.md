@@ -14,9 +14,9 @@ architecture for this hypothetical university to implement to boost their availa
 
 My solution creates a VPC for the University with two public subnets. Within these subnets, there are EC2 instances that host the web application. My solution utilizes an Application Load Balancer that routes the traffic to an Auto Scaling Group that will help to handle peak traffic at thousands of connections and requests. My solution also stays within an $80 budget for a month's worth of uptime and maintenance. This is the main reason that Amazon Web Services is a great tool for this university as it provides a cheap alternative to on-premises networking services that are harder to provision and come at a much higher price.
 
-This diagram created with LucidChart shows my original ideas for the architecure but as the project progressed I had to change and simplify it as the circumstances required.
+This second diagram, created with LucidChart, shows my original ideas for the architecure but as the project progressed I had to change and simplify it as the circumstances required.
 
-[AWS Capstone Project Topology.pdf](https://github.com/vinelden/AWS-Capstone-University-Solution/files/11681657/AWS.Capstone.Project.Topology.pdf)
+![AWS Capstone Project Topology](https://github.com/vinelden/AWS-Capstone-University-Solution/assets/133430016/7badc538-fd4b-46fb-bcd9-fcf60a174850)
 
 ### Cost Analysis
 
